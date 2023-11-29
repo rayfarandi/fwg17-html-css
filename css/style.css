@@ -40,6 +40,18 @@ body  .kiri {
     height: 1024px;
     
 }
+.kiri .backgroundRegister {
+    position: relative;
+    background-image: url(/assets/Rectangle\ 289.png);
+    top: 0;
+    left: 0;
+    box-sizing: border-box;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 460px;
+    height: 1024px;
+    
+}
 
 /* body > .kanan {
     display: flex;
@@ -70,8 +82,21 @@ body  .logo {
     margin-left: 70px;
     
   }
+  body  .logoRegister {
+    display: flex; 
+    gap: 15px;
+    justify-content: center;
+    margin-top: 50px;
+    margin-left: 70px;
+    
+  }
 
 body  .kanan .logo .img {
+    position: relative;
+    width: 32px;
+    height: 32px;
+}
+body  .kanan .logoRegister .img {
     position: relative;
     width: 32px;
     height: 32px;
@@ -81,8 +106,18 @@ body  .kanan .logo .logo1 {
     position: relative;
     width: 128px;
 }
+body  .kanan .logoRegister .logo1 {
+    position: relative;
+    width: 128px;
+}
   
 body  .kanan .logo .logo1 .text-form {
+    font-family: "Sacramento", Helvetica;
+    font-weight: 400;
+    color: #8e6447;
+    font-size: 20px;
+}
+body  .kanan .logoRegister .logo1 .text-form {
     font-family: "Sacramento", Helvetica;
     font-weight: 400;
     color: #8e6447;
@@ -236,7 +271,7 @@ body  .form1 {
     font-size: 12px;
   }
   
-  .kanan .div-4 {
+  .kanan .registerGoogleFacebook {
     display: flex;
     align-items: flex-start;
     gap: 14px;
@@ -247,10 +282,8 @@ body  .form1 {
   }
   
   .kanan .facebook-btn {
-    position: relative;
     flex: 1;
-    align-self: stretch;
-    flex-grow: 1;
+    height: 64px;
     background-color: #ffffff;
     border-radius: 16px;
     box-shadow: 0px 4px 10px #00000014;
@@ -281,9 +314,7 @@ body  .form1 {
   }
   
   .kanan .google-btn-standard {
-    position: relative;
     flex: 1;
-    flex-grow: 1;
     height: 64px;
     background-color: #ffffff;
     border-radius: 16px;
