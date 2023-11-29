@@ -1,0 +1,301 @@
+@import url("https://fonts.googleapis.com/css?family=Sacramento:400|Plus+Jakarta+Sans:500,400,600|Inter:400");
+body {
+    margin: 0;
+    width: 100%;
+}
+
+
+/* body > .container {
+    display: flex;
+    max-width: 1440px;
+    height: 1024px;
+    flex-direction: row;
+} */
+.container {
+    display: flex;
+    flex-direction: row;
+    height: 1024px; /* Adjust the height as needed */
+}
+
+.kiri, .kanan {
+    flex: 1; /* The header won't grow or shrink */
+    width: 100%;
+}
+
+body  .kiri {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+.kiri .background {
+    position: relative;
+    background-image: url(/assets/Rectangle289.png);
+    top: 0;
+    left: 0;
+    box-sizing: border-box;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 460px;
+    height: 1024px;
+    
+}
+
+/* body > .kanan {
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+    justify-content: center;
+    margin-top: 50px;
+    margin-left: 70px;
+    flex: 2;
+} */
+body  .kanan {
+    /* display: flex;
+    align-items: center;
+    justify-content: center; */
+    
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    
+}
+  
+body  .logo {
+    display: flex; 
+    gap: 15px;
+    justify-content: center;
+    margin-top: 150px;
+    margin-left: 70px;
+    
+  }
+
+body  .kanan .logo .img {
+    position: relative;
+    width: 32px;
+    height: 32px;
+}
+  
+body  .kanan .logo .logo1 {
+    position: relative;
+    width: 128px;
+}
+  
+body  .kanan .logo .logo1 .text-form {
+    font-family: "Sacramento", Helvetica;
+    font-weight: 400;
+    color: #8e6447;
+    font-size: 20px;
+}
+
+body  .form1 {
+    display: flex;
+    flex-direction: column;
+    margin-top: 50px;
+    margin-left: 70px;
+    
+  }
+  
+  body  .form1 .text-form-2 {
+    position: relative;
+    font-family: "Plus Jakarta Sans", Helvetica;
+    font-weight: 600;
+    color: #8e6447;
+    font-size: 22px;
+  }
+  
+  body  .form1 .p {
+    position: relative;
+    font-family: "Plus Jakarta Sans", Helvetica;
+    color: #4e5664;
+    font-size: 16px;
+  }
+  
+  body  .form1 .textEP {
+    display: flex;
+    flex-direction: column;
+    width: 780px;
+    gap: 13px;
+    margin-top: 15px;
+  }
+  
+  body  .form1 .text-form-3 {
+    position: relative;
+    align-self: stretch;
+    margin-top: -1px;
+    font-family: "Plus Jakarta Sans", Helvetica;
+    font-weight: 600;
+    color: #0b132a;
+    font-size: 16px;
+    letter-spacing: 0;
+    line-height: normal;
+  }
+  
+  .kanan .div-3 {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 14px 13px;
+    width: 100%;
+    background-color: #fcfdfe;
+    border-radius: 8px;
+    overflow: hidden;
+    border: 1px solid;
+    border-color: #dedede;
+  }
+  
+  .kanan .img-2 {
+    position: relative;
+    width: 16px;
+    height: 16px;
+  }
+  
+  .kanan .text-form-4 {
+    position: relative;
+    flex: 1;
+    margin-top: -0.5px;
+    font-family: "Plus Jakarta Sans", Helvetica;
+    font-weight: 400;
+    color: #4f5665;
+    font-size: 12px;
+    letter-spacing: 0.75px;
+    line-height: normal;
+  }
+  
+  .kanan .text-form-5 {
+    margin: 15px;  
+    color: #ff8906;
+    text-align: right;
+    
+  }
+  
+  .kanan .div-wrapper {
+    display: flex;
+    height: 50px;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    padding: 10px;
+    position: relative;
+    align-self: stretch;
+    width: 100%;
+    background-color: #ff8906;
+    border-radius: 6px;
+  }
+  
+  .kanan .text-form-6 {
+    font-family: "Plus Jakarta Sans", Helvetica;
+    font-weight: 500;
+    color: #0b132a;
+    font-size: 20px;
+  }
+  
+  .kanan .not-have-an-account {
+    font-family: "Plus Jakarta Sans", Helvetica;
+    font-weight: 400;
+    font-size: 16px;
+    text-align: center;
+    margin: 15px;
+  }
+  
+  .kanan .span {
+    color: #4e5664;
+   font-size: 16px;
+  }
+  
+  .kanan .text-form-7 {
+    color: #ff8906;
+  }
+  
+  .kanan .or-web {
+    position: relative;
+    height: 50px;
+  }
+  
+  .kanan .line {
+    width: 312px;
+    left: 0;
+    position: absolute;
+    top: 8px;
+  }
+  
+  .kanan .line-2 {
+    left: 482px;
+    position: absolute;
+    top: 8px;
+  }
+  
+  .kanan .text-form-8 {
+    position: absolute;
+    top: -1px;
+    left: 384px;
+    font-family: "Inter", Helvetica;
+    font-weight: 400;
+    color: #aaaaaa;
+    font-size: 12px;
+  }
+  
+  .kanan .div-4 {
+    display: flex;
+    align-items: flex-start;
+    gap: 14px;
+    position: relative;
+    align-self: stretch;
+    width: 100%;
+    flex: 0 0 auto;
+  }
+  
+  .kanan .facebook-btn {
+    position: relative;
+    flex: 1;
+    align-self: stretch;
+    flex-grow: 1;
+    background-color: #ffffff;
+    border-radius: 16px;
+    box-shadow: 0px 4px 10px #00000014;
+  }
+  
+  .kanan .div-5 {
+    display: inline-flex;
+    align-items: flex-end;
+    gap: 22px;
+    position: relative;
+    top: 20px;
+    left: 127px;
+  }
+  
+  .kanan .img-3 {
+    position: relative;
+    width: 24px;
+    height: 24px;
+  }
+  
+  .kanan .text-form-9 {
+    font-family: "Plus Jakarta Sans", Helvetica;
+    font-weight: 500;
+    color: #4f5665;
+    font-size: 18px;
+    text-align: center;
+    
+  }
+  
+  .kanan .google-btn-standard {
+    position: relative;
+    flex: 1;
+    flex-grow: 1;
+    height: 64px;
+    background-color: #ffffff;
+    border-radius: 16px;
+    box-shadow: 0px 4px 10px #00000014;
+  }
+  
+  .kanan .div-6 {
+    display: inline-flex;
+    align-items: flex-end;
+    gap: 22px;
+    position: relative;
+    top: 20px;
+    left: 130px;
+  }
+  
