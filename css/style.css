@@ -441,6 +441,7 @@ body  .form {
   border-radius: 6px;
   box-sizing: border-box;
   transition: background-color 0.3s ease;
+  margin-top: 15px;
 }
 
 
