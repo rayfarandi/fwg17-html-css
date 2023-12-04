@@ -13,32 +13,36 @@
             <img class="img" src="assets/Frame.png" />
             <div class="logo1"><div class="text-form">Coffee Shop</div></div>
           </div>
-        <div class="form1">
+      <div class="form">
+        <form method="post">
           <div class="text-form-2">Login</div>
           <p class="p">Fill out the form correctly</p>
           
           <div class="textEP">
-            <div class="text-form-3">Email</div>
-            <div class="div-3">
+            <label for="email">Email</label>
+            <div class="kotak">
               <img class="img-2" src="assets/mail.png" />
-              <div class="text-form-4">Enter Your Email</div>
+              <input type="email" name="email" id="email" placeholder="Enter Your Email">
             </div>
           </div>
 
           <div class="textEP">
-            <div class="text-form-3">Password</div>
-            <div class="div-3">
+            <label for="password">Password</label>
+            <div class="kotak">
               <img class="img-2" src="assets/password.png" />
-              <div class="text-form-4">Enter Your Password</div>
+              <input type="password" name="password"id="password"placeholder="Enter Your Password">
               <img class="img-2" src="assets/eyeslash.png" />
             </div>
           </div>
+          
 
-          <div class="text-form-5">Lupa Password?</div>
-          <div class="button"><div class="text-form-6">Login</div></div>
-          <p class="not-have-an-account">
-            <span class="span">Not Have An Account? </span> <span class="text-form-7">Register</span>
-          </p>
+          <div class="text-form-5"><a href="forgot.html">Lupa Password?</a></div>
+          <button type="submit" class="button">
+            <div class="text-button">Login</div>
+          </button>
+          <div class="not-have-an-account">
+            <span >Not Have An Account? </span> <a href="register.html" class="text-register">Register</a>
+          </div>
           <div class="or-web">
             <img class="line" src="assets/line 1.png" />
             <img class="line-2" src="assets/line 2.png" />
@@ -58,8 +62,8 @@
               </div>
             </div>
           </div>
-
-        </div><!--form-->
+        </form>
+      </div><!--form-->
     </div> <!--kanan-->
 </div><!--  container -->
 </body>

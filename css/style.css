@@ -4,79 +4,67 @@ body {
     width: 100%;
 }
 
-
-/* body > .container {
-    display: flex;
-    max-width: 1440px;
-    height: 1024px;
-    flex-direction: row;
-} */
 .container {
     display: flex;
     flex-direction: row;
-    height: 1024px; /* Adjust the height as needed */
+    /* height: 1024px; jika ingin mengatur tinggi */
+    box-sizing: border-box;
+}
+input {
+  border: none; /* Menghilangkan border */
+  outline: none;
+  width: 100%;
+}
+a {
+  text-decoration:none ;
+  color: inherit;
 }
 
+
 .kiri, .kanan {
-    flex: 1; /* The header won't grow or shrink */
+    flex: 1; 
     width: 100%;
 }
 
 body  .kiri {
     display: flex;
-    align-items: center;
-    justify-content: center;
     
 }
 .kiri .background {
     position: relative;
     background-image: url(/assets/Rectangle289.png);
-    top: 0;
-    left: 0;
     box-sizing: border-box;
     background-repeat: no-repeat;
     background-size: cover;
-    width: 460px;
-    height: 1024px;
+    width: 100%;
+    height: 100vh;
+    background-position: center center;
     
 }
 .kiri .backgroundRegister {
     position: relative;
     background-image: url(/assets/Rectangle\ 289.png);
-    top: 0;
-    left: 0;
     box-sizing: border-box;
     background-repeat: no-repeat;
     background-size: cover;
-    width: 460px;
-    height: 1024px;
+    width: 100%;
+    height: 100vh;
+    background-position: center center;
     
 }
 .kiri .backgroundForgot {
     position: relative;
     background-image: url(/assets/Rectangle\ 289forgot.png);
-    top: 0;
-    left: 0;
     box-sizing: border-box;
     background-repeat: no-repeat;
     background-size: cover;
-    width: 460px;
-    height: 1024px;
+    width: 100%;
+    height: 100vh;
+    background-position: center center;
     
 }
-/* body > .kanan {
-    display: flex;
-    flex-direction: column;
-    align-items: center; 
-    justify-content: center;
-    margin-top: 50px;
-    margin-left: 70px;
-    flex: 2;
-} */
+
 body  .kanan {
-    /* display: flex;
-    align-items: center;
-    justify-content: center; */
     
     display: flex;
     flex-direction: column;
@@ -89,16 +77,12 @@ body  .logo {
     display: flex; 
     gap: 15px;
     justify-content: center;
-    margin-top: 150px;
-    margin-left: 70px;
     
   }
   body  .logoRegister {
     display: flex; 
     gap: 15px;
     justify-content: center;
-    margin-top: 50px;
-    margin-left: 70px;
     
   }
 
@@ -135,15 +119,15 @@ body  .kanan .logoRegister .logo1 .text-form {
     font-size: 20px;
 }
 
-body  .form1 {
+body  .form {
     display: flex;
     flex-direction: column;
     margin-top: 50px;
-    margin-left: 70px;
+    width: 600px;
     
   }
   
-  body  .form1 .text-form-2 {
+  body  .form .text-form-2 {
     position: relative;
     font-family: "Plus Jakarta Sans", Helvetica;
     font-weight: 600;
@@ -151,22 +135,21 @@ body  .form1 {
     font-size: 22px;
   }
   
-  body  .form1 .p {
+  body  .form .p {
     position: relative;
     font-family: "Plus Jakarta Sans", Helvetica;
     color: #4e5664;
     font-size: 16px;
   }
   
-  body  .form1 .textEP {
+  body  .form .textEP {
     display: flex;
     flex-direction: column;
-    width: 780px;
     gap: 13px;
     margin-top: 15px;
   }
   
-  body  .form1 .text-form-3 {
+  body  .form label {
     position: relative;
     align-self: stretch;
     margin-top: -1px;
@@ -178,7 +161,7 @@ body  .form1 {
     line-height: normal;
   }
   
-  .kanan .div-3 {
+  .kanan .kotak {
     display: flex;
     align-items: center;
     gap: 10px;
@@ -189,24 +172,14 @@ body  .form1 {
     overflow: hidden;
     border: 1px solid;
     border-color: #dedede;
+    box-sizing: border-box;
+    
   }
   
   .kanan .img-2 {
     position: relative;
     width: 16px;
     height: 16px;
-  }
-  
-  .kanan .text-form-4 {
-    position: relative;
-    flex: 1;
-    margin-top: -0.5px;
-    font-family: "Plus Jakarta Sans", Helvetica;
-    font-weight: 400;
-    color: #4f5665;
-    font-size: 12px;
-    letter-spacing: 0.75px;
-    line-height: normal;
   }
   
   .kanan .text-form-5 {
@@ -218,13 +191,14 @@ body  .form1 {
   
   .kanan .button {
     display: flex;
-    height: 50px;
     align-items: center;
     justify-content: center;
     padding: 10px;
     width: 100%;
     background-color: #ff8906;
     border-radius: 6px;
+    box-sizing: border-box;
+    transition: background-color 0.3s ease;
   }
   .kanan .buttonForgot {
     display: flex;
@@ -237,8 +211,10 @@ body  .form1 {
     background-color: #ff8906;
     border-radius: 6px;
   }
-  
-  .kanan .text-form-6 {
+  .kanan .button:hover{
+    background-color: #f7bd7c;
+  }
+  .kanan .text-button {
     font-family: "Plus Jakarta Sans", Helvetica;
     font-weight: 500;
     color: #0b132a;
@@ -251,14 +227,11 @@ body  .form1 {
     font-size: 16px;
     text-align: center;
     margin: 15px;
-  }
-  
-  .kanan .span {
     color: #4e5664;
-   font-size: 16px;
   }
   
-  .kanan .text-form-7 {
+
+  .kanan .text-register{
     color: #ff8906;
   }
   
@@ -268,22 +241,23 @@ body  .form1 {
   }
   
   .kanan .line {
-    width: 312px;
+    width: 45%;
     left: 0;
     position: absolute;
     top: 8px;
   }
   
   .kanan .line-2 {
-    left: 482px;
+    right: 0%;
     position: absolute;
     top: 8px;
+    width: 40%;
   }
   
   .kanan .text-form-8 {
     position: absolute;
     top: -1px;
-    left: 384px;
+    left: 50%;
     font-family: "Inter", Helvetica;
     font-weight: 400;
     color: #aaaaaa;
@@ -349,3 +323,395 @@ body  .form1 {
     left: 130px;
   }
   
+
+
+/* Profile */
+.desktop-profile {
+  background-color: #ffffff;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  width: 100%;
+  }
+  
+  .desktop-profile .div {
+    background-color: #ffffff;
+    overflow: hidden;
+    width: 1357px;
+    height: 4363px;
+  }
+  
+  .desktop-profile .diataskotak{
+    display: flex;
+    flex: 1;
+  }
+  .desktop-profile .diataskotak p{
+    font-size: 20px;
+    font-weight: 400;
+  }
+  .desktop-profile .kotakkananprofile {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    position: relative;
+    flex-direction: column;
+}
+.desktop-profile .kotakisiprofile{
+  display: flex;
+
+}
+ .desktop-profile .form {
+    display: flex;
+    flex-direction: column;
+    margin-top: 10px;
+    width: 600px;
+    flex: 3;
+    
+}
+
+.desktop-profile  .form .text-form-2 {
+  position: relative;
+  font-family: "Plus Jakarta Sans", Helvetica;
+  font-weight: 600;
+  color: #8e6447;
+  font-size: 22px;
+}
+
+.desktop-profile  .form .p {
+  position: relative;
+  font-family: "Plus Jakarta Sans", Helvetica;
+  color: #4e5664;
+  font-size: 16px;
+}
+
+.desktop-profile  .form .textEP {
+  display: flex;
+  flex-direction: column;
+  gap: 13px;
+  margin-top: 15px;
+}
+
+.desktop-profile  .form label {
+  position: relative;
+  align-self: stretch;
+  margin-top: -1px;
+  font-family: "Plus Jakarta Sans", Helvetica;
+  font-weight: 600;
+  color: #0b132a;
+  font-size: 16px;
+  letter-spacing: 0;
+  line-height: normal;
+}
+
+.desktop-profile .kotak {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 14px 13px;
+  width: 100%;
+  background-color: #fcfdfe;
+  border-radius: 8px;
+  overflow: hidden;
+  border: 1px solid;
+  border-color: #dedede;
+  box-sizing: border-box;
+  
+}
+
+.desktop-profile .img-2 {
+  position: relative;
+  width: 16px;
+  height: 16px;
+}
+
+.desktop-profile .text-form-5 {
+  margin: 15px;  
+  color: #ff8906;
+  text-align: right;
+  
+}
+
+.desktop-profile .button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 10px;
+  width: 100%;
+  background-color: #ff8906;
+  border-radius: 6px;
+  box-sizing: border-box;
+  transition: background-color 0.3s ease;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  /* footer  */
+  .footer {
+    width: 100%;
+    height: 371px;
+  }
+  
+  .footer .group {
+    display: flex;
+    width: 100%;
+    height: 371px;
+  }
+  
+  .footer .overlap-group {
+    position: relative;
+    width: 100%;
+    background-image: url(/assets/Rectangle\ 260.png);
+    background-size: 100% 100%;
+    display: flex;
+  }
+  
+
+  
+  .footer .footer-product {
+    font-family: "Plus Jakarta Sans", Helvetica;
+    color: #0b132a;
+    letter-spacing: 0;
+    line-height: 30px;
+    font-size: 18px;
+    white-space: nowrap;
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+    margin: 0px 102px 0px;
+    justify-content: center;
+  }
+  
+  .footer .footer-engage {
+    font-family: "Plus Jakarta Sans", Helvetica;
+    font-weight: 500;
+    color: #0b132a;
+    font-size: 18px;
+    letter-spacing: 0;
+    line-height: 30px;
+    white-space: nowrap;
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+    justify-content: center;
+    margin: 0px 102px 0px; /* Membuat link-link berada dalam kolom */
+  }
+  
+  
+  .footer .logo-kata2 {
+    display: flex;
+    align-items: flex-start;
+    position: relative;
+    flex: 1;
+    flex-direction: column;
+  }
+  
+  .footer .frame-2 {
+    display: inline-flex;
+    align-items: center;
+    gap: 15px;
+    position: relative;
+    background-color: #8e6447;
+    margin: 92px 0px 0px;
+  }
+ 
+  .footer .p {
+    width: 340px;
+    font-family: "Plus Jakarta Sans", Helvetica;
+    font-weight: 400;
+    color: #4f5665;
+    font-size: 16px;
+    letter-spacing: 0;
+    line-height: 30px;
+  }
+  
+  .footer .text-wrapper-13 {
+    position: absolute;
+    top: 274px;
+    left: 130px;
+    font-family: "Rubik", Helvetica;
+    font-weight: 400;
+    color: #afb5c0;
+    font-size: 16px;
+    text-align: center;
+    letter-spacing: 0;
+    line-height: 30px;
+    white-space: nowrap;
+  }
+  
+  .footer .sosmed {
+    display: inline-flex;
+    align-items: center;
+    gap: 20px;
+    flex: 1;
+    justify-content: center;
+  }
+  
+  .footer .socmed-facebook {
+    background-image: url(/assets/Facebook.png);
+    position: relative;
+    width: 33.6px;
+    height: 33.6px;
+    background-color: #0b132a;
+    border-radius: 16.8px;
+    box-shadow: 0px 13px 18px #10122314;
+    background-size: 100% 100%;
+  }
+  
+  .footer .socmed-twitter {
+    background-image: url(/assets/Twitter.png);
+    position: relative;
+    width: 33.6px;
+    height: 33.6px;
+    background-color: #0b132a;
+    border-radius: 16.8px;
+    box-shadow: 0px 13px 18px #10122314;
+    background-size: 100% 100%;
+  }
+  
+  .footer .socmed-instagram {
+    background-image: url(/assets/Instagram.png);
+    position: relative;
+    width: 33.6px;
+    height: 33.6px;
+    background-color: #0b132a;
+    border-radius: 16.8px;
+    box-shadow: 0px 13px 18px #10122314;
+    background-size: 100% 100%;
+  }
+  
+  
+  
+  /* end footer  */
+
+    /* navbar  */
+    .desktop-profile .navbar {
+      display: flex;
+      width: 1358px;
+      height: 76px;
+      align-items: center;
+      justify-content: space-around;
+      background-color: black;
+      z-index: 1;
+    }
+   
+    
+    .desktop-profile .navbar .kirinavbar {
+      display: inline-flex;
+      align-items: center;
+      gap: 68px;
+      position: relative;
+      flex: 0 0 auto;
+    }
+    
+    .desktop-profile .logo {
+      position: relative;
+      flex: 0 0 auto;
+    }
+    
+    .desktop-profile .header-link-block {
+      display: flex;
+      width: 156px;
+      align-items: center;
+      gap: 60px;
+      position: relative;
+      align-self: stretch;
+      text-decoration: none;
+      font-family: "Plus Jakarta Sans", Helvetica;
+      color: #ffffff;
+      text-align: center;
+      letter-spacing: 0;
+      line-height: 20px;
+    }
+    
+    .desktop-profile .navbar .header-link-block  a {
+      text-decoration: none;
+    }
+    .desktop-profile .navbar .header-link-block .home:hover{
+      border-bottom-width: 1px;
+      border-bottom-style: solid;
+      border-color: #ff8906;
+    }
+    .desktop-profile .navbar .header-link-block .product:hover{
+      border-bottom-width: 1px;
+      border-bottom-style: solid;
+      border-color: #ff8906;
+    }  
+    
+    
+    .desktop-profile .navbar .kanannavbar {
+      display: inline-flex;
+      align-items: center;
+      gap: 22px;
+      position: relative;
+      flex: 0 0 auto;
+    }
+    
+    .desktop-profile .img-2 {
+      position: relative;
+      width: 24px;
+      height: 24px;
+    }
+    
+    .desktop-profile .button-signin {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: 6px;
+      padding: 12px 18px;
+      position: relative;
+      flex: 0 0 auto;
+      border-radius: 5px;
+      border: 1px solid;
+      border-color: #ffffff;
+      box-sizing: border-box;
+    }
+    
+    .desktop-profile .button-signin a {
+      color: #ffffff;
+      font-family: "Plus Jakarta Sans", Helvetica;
+      font-weight: 500;
+      font-size: 14px;
+      text-align: center;
+      text-decoration: none;
+    }
+    
+    .desktop-profile .button-signup {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: 6px;
+      padding: 12px 18px;
+      position: relative;
+      flex: 0 0 auto;
+      background-color: #ff8906;
+      border-radius: 5px;
+      box-sizing: border-box;
+    }
+    
+    .desktop-profile .button-signup a {
+      color: #0b132a;
+      position: relative;
+      width: fit-content;
+      margin-top: -1px;
+      font-family: "Plus Jakarta Sans", Helvetica;
+      font-weight: 500;
+      font-size: 14px;
+      text-align: center;
+      text-decoration: none;
+    }
+    /* navbar end  */
