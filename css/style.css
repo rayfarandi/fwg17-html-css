@@ -15,13 +15,13 @@ body.auth {
   display: flex;
 }
 
-body.auth.register-page {
+body.auth.registerPage {
   height: 50rem;
 }
 
 .auth .leftPage {
   width: 25%;
-  background-image: url(assets/bg-register.jpg);
+  background-image: url(../assets/bg-register.jpg);
   background-size: cover;
   background-position: center;
 }
@@ -204,7 +204,7 @@ body.loginPage {
 }
 
 .auth .leftPage.login {
-  width: 30%;
+  width: 25%;
   background-image: url(../assets/bg-login.jpg);
   background-size: contain;
   background-repeat: no-repeat;
@@ -215,17 +215,12 @@ body.loginPage {
   gap: 1rem;
 }
 
-.auth.loginPage .rightPage.login .content.login {
-  width: 100%;
-}
-
 .auth .rightPage.login {
   display: flex;
   align-items: center;
 }
 
 .auth.loginPage .rightPage.login .content.login {
-  margin-left: 1rem;
   margin-top: 1rem;
   height: 100vh;
   height: fit-content;
@@ -239,34 +234,34 @@ body.loginPage {
 /* login end */
 
 /* forgot password start*/
-body.forgot-pass-page {
+body.forgotPassGlobal {
   height: 100vh;
 }
-.auth .leftPage.forgot-password {
+.auth .leftPage.forgotPass {
   width: 25%;
-  background-image: url(assets/bg-forgot-password.jpg);
+  background-image: url(../assets/bg-forgotPass.jpg);
   background-size: contain;
   background-repeat: no-repeat;
   background-position: left;
 }
 
-.auth .rightPage.forgot-password {
+.auth .rightPage.forgotPass {
   display: flex;
   align-items: center;
 }
 
-.auth .content.forgot-password .logo {
+.auth .content.forgotPass .logo {
   margin-bottom: 1rem;
 }
 
-.auth .rightPage.forgot-password .content.forgot-password {
+.auth .rightPage.forgotPass .content.forgotPass {
   height: auto;
   margin-left: 0;
   margin-top: 0;
   width: 90%;
 }
 
-.auth .content.forgot-password .form {
+.auth .content.forgotPass .form {
   gap: 1.5rem;
   margin-top: 1rem;
 }
@@ -286,7 +281,7 @@ nav {
   z-index: 100;
 }
 nav.dark {
-  background-color: #0b0909;
+  background-color: #1a1616
 }
 nav a {
   color: #fff;
@@ -325,52 +320,18 @@ nav a {
   border: 1px solid #fff;
   border-radius: 5px;
   padding: 12px 18px 12px 18px;
-  position: relative;
-  overflow: hidden;
+  
 }
-.right-nav #sign-in::before {
-  position: absolute;
-  content: "";
-  left: 0;
-  top: 0;
-  background-color: #ff8906;
-  height: 3rem;
-  width: 5.5rem;
-  left: -5.5rem;
-  z-index: -1;
-  transition: 0.5s;
-}
-.right-nav #sign-in:hover::before {
-  left: 0;
-}
+
 .right-nav #sign-up {
   background-color: #ff8906;
   color: #000;
   border: 1px solid #ff8906;
   border-radius: 5px;
   padding: 12px 18px 12px 18px;
-  position: relative;
-  overflow: hidden;
-  z-index: 1;
+
 }
-.right-nav #sign-up::before {
-  position: absolute;
-  content: "";
-  left: 0;
-  top: 0;
-  background-color: #fff;
-  height: 3rem;
-  width: 6rem;
-  left: -6rem;
-  z-index: -1;
-  transition: 0.5s;
-}
-.right-nav #sign-up:hover {
-  color: #ff8906;
-}
-.right-nav #sign-up:hover::before {
-  left: 0;
-}
+
 /* nav end */
 
 /* footer start */
@@ -442,21 +403,9 @@ footer .engage a:hover {
   color: #ff8906;
 }
 
-footer .social-media .link-social-media a::before {
-  position: absolute;
-  content: "";
-  background-color: #0b132a;
-  width: 30px;
-  height: 30px;
-  border-radius: 50%;
-  left: 2px;
-  top: 2px;
-  z-index: -1;
-}
 
-footer .social-media .link-social-media a:hover::before {
-  display: none;
-}
+
+
 /* footer end */
 
 button {
@@ -773,35 +722,36 @@ main .landing-page .left-page .content .data p {
 }
 
 .main .landing-page .right-page #chat-icon {
-  position: absolute;
+  position: fixed;
   bottom: 6rem;
   right: 7rem;
+  z-index: 10;
 }
 
 
 /* landing page end */
 
-/* introduction start */
-.main .introduction {
+/* greeting start */
+.main .greeting {
   display: flex;
   flex-direction: column;
   gap: 4rem;
   margin-bottom: 14rem;
 }
 
-.main .provide-list {
+.main .provide {
   display: flex;
   height: 35rem;
 }
 
-.main .provide-list .list {
+.main .provide .list {
   display: flex;
   flex-direction: column;
   justify-content: center;
   width: 50%;
 }
 
-.main .provide-list .list .content {
+.main .provide .list .content {
   display: flex;
   flex-direction: column;
   gap: 1.5rem;
@@ -809,17 +759,17 @@ main .landing-page .left-page .content .data p {
   margin-left: 5.5rem;
 }
 
-.main .provide-list .list .content h1 {
+.main .provide .list .content h1 {
   font-size: 3rem;
   color: #0b132a;
 }
 
-.main .provide-list .list .content div {
+.main .provide .list .content div {
   display: flex;
   gap: 1.5rem;
 }
 
-.main .provide-list .list .content div hr {
+.main .provide .list .content div hr {
   height: 4rem;
   width: 3%;
   background-color: #ff8906;
@@ -827,35 +777,35 @@ main .landing-page .left-page .content .data p {
   margin-top: 4rem;
 }
 
-.main .provide-list .list .content h1 span {
+.main .provide .list .content h1 span {
   color: #8e6447;
 }
 
-.main .provide-list .list .content p {
+.main .provide .list .content p {
   font-size: 1rem;
 }
 
-.main .provide-list .list .content .list-check {
+.main .provide .list .content .list-check {
   display: flex;
   flex-direction: column;
   gap: 1rem;
 }
 
-.main .provide-list .list .content .list-check .group-list-check {
+.main .provide .list .content .list-check .group-list-check {
   display: flex;
   align-items: center;
   gap: 1rem;
 }
 
-.main .provide-list .list .content .list-check .group-list-check p {
+.main .provide .list .content .list-check .group-list-check p {
   font-size: 0.8rem;
 }
 
-.main .provide-list .staff-image {
+.main .provide .staff-image {
   flex: 1;
 }
 
-.main .provide-list .staff-image {
+.main .provide .staff-image {
   background-image: url(../assets/staff-image.jpg);
   background-position: center;
 }
@@ -959,7 +909,7 @@ main .landing-page .left-page .content .data p {
   padding: 5px 19px 5px 19px;
   border: 1.3px solid #ff8906;
 }
-/* introduction end */
+/* greeting end */
 
 /* map start */
 .main .map img:nth-child(2) {
@@ -1118,13 +1068,13 @@ main .landing-page .left-page .content .data p {
 /* main page end */
 
 /* page detail product start */
-body.page-detail-product {
+body.desktop-detail-product {
   display: flex;
   flex-direction: column;
   align-items: center;
   height: auto;
 }
-.page-detail-product .container {
+.desktop-detail-product .container {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -1134,18 +1084,18 @@ body.page-detail-product {
 }
 
 /* detail product start */
-.page-detail-product .product {
+.desktop-detail-product .product {
   display: flex;
   gap: 1.5rem;
 }
 
-.page-detail-product .product-img {
+.desktop-detail-product .product-img {
   width: 50%;
   justify-content: space-between;
   width: max-content;
 }
 
-.page-detail-product .detail-img {
+.desktop-detail-product .detail-img {
   display: flex;
   justify-content: space-between;
   margin-top: 1rem;
@@ -1153,26 +1103,26 @@ body.page-detail-product {
 }
 
 /* product-detail */
-.page-detail-product .product-detail {
+.desktop-detail-product .product-detail {
   flex: 1;
   display: flex;
   gap: 1.5rem;
   flex-direction: column;
 }
 
-.page-detail-product .product-name {
+.desktop-detail-product .product-name {
   font-size: 3rem;
   font-weight: 500;
   color: #0b0909;
 }
 
-.page-detail-product .rating,
-.page-detail-product .rating-stars {
+.desktop-detail-product .rating,
+.desktop-detail-product .rating-stars {
   display: flex;
   gap: 1rem;
 }
 
-.page-detail-product .review-count {
+.desktop-detail-product .review-count {
   display: flex;
   align-items: center;
   gap: 1rem;
@@ -1181,88 +1131,88 @@ body.page-detail-product {
   width: fit-content;
 }
 
-.page-detail-product .review-count p:nth-child(1) {
+.desktop-detail-product .review-count p:nth-child(1) {
   border-right: 2px solid #4f5665;
   padding-right: 1rem;
 }
 
-.page-detail-product #description-product {
+.desktop-detail-product #description-product {
   font-size: 0.9rem;
 }
 
-.page-detail-product .order-quantity {
+.desktop-detail-product .order-quantity {
   display: flex;
 }
 
-.page-detail-product .order-quantity h1 {
+.desktop-detail-product .order-quantity h1 {
   display: flex;
   justify-content: center;
   font-size: 1.5rem;
   border-radius: 4px;
 }
 
-.page-detail-product .order-quantity #min,
-.page-detail-product .order-quantity #plus {
+.desktop-detail-product .order-quantity #min,
+.desktop-detail-product .order-quantity #plus {
   width: 2rem;
   height: 2rem;
   border: 1px solid #ff8906;
   line-height: 25px;
 }
 
-.page-detail-product .order-quantity #quantity {
+.desktop-detail-product .order-quantity #quantity {
   border: 1px solid #e8e8e8;
   width: 3rem;
 }
 
-.page-detail-product .order-quantity #plus {
+.desktop-detail-product .order-quantity #plus {
   background-color: #ff8906;
   transform: translateX(-5px);
 }
 
-.page-detail-product .order-quantity #min {
+.desktop-detail-product .order-quantity #min {
   background-color: #fff;
   transform: translateX(5px);
 }
 
-.page-detail-product .product-size,
-.page-detail-product .product-variant {
+.desktop-detail-product .product-size,
+.desktop-detail-product .product-variant {
   display: flex;
   flex-direction: column;
   gap: 1rem;
 }
 
-.page-detail-product .sizes,
-.page-detail-product .variants {
+.desktop-detail-product .sizes,
+.desktop-detail-product .variants {
   display: flex;
   justify-content: space-between;
 }
 
-.page-detail-product .sizes p,
-.page-detail-product .variants p {
+.desktop-detail-product .sizes p,
+.desktop-detail-product .variants p {
   border: 1px solid #e8e8e8;
   padding: 0.4rem 3rem 0.4rem 3rem;
   color: #4f5665;
   font-size: 1rem;
 }
 
-.page-detail-product .variants p {
+.desktop-detail-product .variants p {
   padding: 0.4rem 6.8rem;
 }
 
-.page-detail-product .sizes p.selected,
-.page-detail-product .variants p.selected {
+.desktop-detail-product .sizes p.selected,
+.desktop-detail-product .variants p.selected {
   border: 1px solid #ff8906;
   color: #000;
 }
 
-.page-detail-product .buttons-order {
+.desktop-detail-product .buttons-order {
   display: flex;
   justify-content: space-between;
   gap: 1rem;
   margin-top: 1rem;
 }
 
-.page-detail-product .buttons-order button {
+.desktop-detail-product .buttons-order button {
   border: none;
   background: transparent;
   border: 1px solid #ff8906;
@@ -1274,13 +1224,13 @@ body.page-detail-product {
   padding: 0.4rem;
 }
 
-.page-detail-product #buy {
+.desktop-detail-product #buy {
   background-color: #ff8906;
   color: #000;
   width: 49.5%;
 }
 
-.page-detail-product .buttons-order .add-to-cart {
+.desktop-detail-product .buttons-order .add-to-cart {
   display: flex;
   align-items: center;
   flex: 1;
@@ -1288,27 +1238,27 @@ body.page-detail-product {
 }
 /* detail product end */
 /* recommendation products start */
-.page-detail-product .list-products {
+.desktop-detail-product .list-products {
   display: flex;
   flex-direction: column;
   gap: 1.5rem;
 }
 
-.page-detail-product .list-products h1 {
+.desktop-detail-product .list-products h1 {
   font-size: 3rem;
   color: #0b0909;
 }
 
-.page-detail-product .list-products h1 span {
+.desktop-detail-product .list-products h1 span {
   color: #8e6447;
 }
 
-.page-detail-product .wrap {
+.desktop-detail-product .wrap {
   display: flex;
   gap: 1.5rem;
 }
 
-.page-detail-product .page-chooser {
+.desktop-detail-product .page-chooser {
   margin-top: 12rem;
 }
 /* recommendaton products end */
@@ -1714,7 +1664,7 @@ body.profile {
   height: auto;
   color: #0b0909;
 }
-.profile .container {
+.profile .kotak-profile {
   width: 90%;
   margin-top: 10%;
   display: flex;
@@ -1722,7 +1672,7 @@ body.profile {
   gap: 2rem;
 }
 
-.profile .container > h1 {
+.profile .kotak-profile > h1 {
   font-size: 3rem;
 }
 

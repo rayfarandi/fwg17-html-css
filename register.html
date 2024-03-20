@@ -1,84 +1,154 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Register page</title>
     <link rel="stylesheet" href="./css/style.css">
+    <style>
+      @media screen and (max-width: 426px) {
+        body.auth.registerPage {
+          height: 45rem;
+        }
+
+        .leftPage {
+          display: none;
+        }
+
+        .auth.registerPage .rightPage .content {
+          margin-top: 0;
+          margin-left: 0;
+        }
+
+        .rightPage {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+        }
+
+        .registerPage .form h1 {
+          font-size: 1rem;
+        }
+
+        .registerPage .form p {
+          font-size: 0.9rem;
+        }
+
+        .registerPage .form label {
+          font-size: 0.9rem;
+        }
+
+        .auth.registerPage .form .input-group .input {
+          padding: 0.6rem;
+        }
+
+        .registerPage #register-login-submit {
+          padding: 8px;
+        }
+
+        .registerPage .or {
+          margin-top: 0;
+          margin-bottom: 0;
+        }
+
+        .registerPage .buttons{
+          justify-content: center;
+          gap: 2.5rem;
+        }
+
+        .registerPage .buttons p{
+          display: none;
+        }
+
+        .registerPage .buttons button{
+          width: 3rem;
+          height: 3rem;
+        }
+      }
+    </style>
     </head>
-<body>
-<div class="container">
-    <div class="kiri">
-        <div class="backgroundRegister"></div>
-    </div>
-    <div class="kanan">
-        <div class="logoRegister">
-            <img class="img" src="assets/Frame.png" />
-            <div class="logo1"><div class="text-form">Coffee Shop</div></div>
+    <body class="auth registerPage">
+      <div class="leftPage"></div>
+      <div class="rightPage">
+        <div class="content">
+          <div class="logo">
+            <div class="logo-items">
+              <img src="./assets/cup-coffe-icon.png" />
+              <img src="./assets/text-logo.png" id="logo-text" />
+            </div>
           </div>
           <div class="form">
-            <form method="post">
-              <div class="text-form-2">Register</div>
-              <p class="p">Fill out the form correctly</p>
-              <div class="textEP">
-                <label for="fullname">Full Name</label>
-                <div class="kotak">
-                  <img class="img-2" src="assets/Profile.png" />
-                  <input type="text" name="fullname" id="fullname" placeholder="Enter Your Full Name">
+            <h1>Register</h1>
+            <p>Fill out the form correctly</p>
+  
+            <form>
+              <div class="input-group">
+                <label for="full-name">Full Name</label>
+                <div class="input">
+                  <img src="./assets/fullname.png" />
+                  <input
+                    id="full-name" type="text"
+                    placeholder="Enter Your Full Name"
+                  />
                 </div>
               </div>
-
-              <div class="textEP">
+  
+              <div class="input-group">
                 <label for="email">Email</label>
-                <div class="kotak">
-                  <img class="img-2" src="assets/mail.png" />
-                  <input type="email" name="email" id="email" placeholder="Enter Your Email">
+                <div class="input">
+                  <img src="./assets/mail.png" />
+                  <input id="email" type="email" placeholder="Enter Your Email" />
                 </div>
               </div>
-    
-              <div class="textEP">
+  
+              <div class="input-group">
                 <label for="password">Password</label>
-                <div class="kotak">
-                  <img class="img-2" src="assets/password.png" />
-                  <input type="password" name="password"id="password"placeholder="Enter Your Password">
-                  <img class="img-2" src="assets/eyeslash.png" />
+                <div class="input">
+                  <img src="./assets/password.png" />
+                  <input
+                    id="password" type="password"
+                    placeholder="Enter Your Password"
+                  />
                 </div>
               </div>
-              
-              <div class="textEP">
-                <label for="confirmpassword">Confirm Password</label>
-                <div class="kotak">
-                  <img class="img-2" src="assets/password.png" />
-                  <input type="password" name="confirmpassword"id="confirmpassword"placeholder="Enter Your Password">
-                  <img class="img-2" src="assets/eyeslash.png" />
+  
+              <div class="input-group">
+                <label for="confirm-password">Confirm Password</label>
+                <div class="input">
+                  <img src="./assets/password.png" />
+                  <input
+                    id="confirm-password" type="password"
+                    placeholder="Enter Your Password Again"
+                  />
                 </div>
               </div>
-              
-              <button type="submit" class="button">
-                <div class="text-button">Register</div>
-              </button>
-              <div class="not-have-an-account">
-                <span >Not Have An Account? </span> <a href="login.html" class="text-register">Login</a>
-              </div>
-              <div class="or-web">
-                <img class="line" src="assets/line 1.png" />
-                <img class="line-2" src="assets/line 2.png" />
-                <div class="text-form-8">Or</div>
-              </div>
-              <div class="registerGoogleFacebook">
-                <div class="facebook-btn">
-                  <div class="div-5">
-                    <img class="img-3" src="assets/bx_bxl-facebook-circle.png" />
-                    <div class="text-form-9">Facebook</div>
-                  </div>
-                </div>
-                <div class="google-btn-standard">
-                  <div class="div-6">
-                    <img class="img-3" src="assets/flat-color-icons_google.png" />
-                    <div class="text-form-9">Google</div>
-                  </div>
-                </div>
-              </div>
+  
+              <button type="submit" id="register-login-submit">Register</button>
             </form>
-          </div><!--form-->
-    </div> <!--kanan-->
-</div><!--  container -->
-</body>
+  
+            <div class="login-register">
+              <p>Have An Account?</p>
+              <a href="./login.html">Login</a>
+            </div>
+  
+            <div class="or">
+              <hr />
+              <p>Or</p>
+              <hr />
+            </div>
+  
+            <div class="buttons">
+              <button id="facebook">
+                <img src="./assets/facebook-logo.png" alt="" />
+                <p>Facebook</p>
+              </button>
+              <button id="google">
+                <img src="./assets/google-logo.png" alt="" />
+                <p>Google</p>
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </body>
 </html>

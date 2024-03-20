@@ -4,157 +4,396 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Detail-Product</title>
-    <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <style>
+      @media screen and (max-width: 426px) {
+        .desktop-detail-product .container {
+          gap: 2.5rem;
+        }
+        .desktop-detail-product .product {
+          flex-direction: column;
+          margin-top: 2rem;
+        }
+        .desktop-detail-product .product-img {
+          width: 100%;
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+        }
+        .desktop-detail-product .product-img > img {
+          width: 21.1rem;
+        }
+        .desktop-detail-product .product-img > div img {
+          width: 6.37rem;
+        }
+
+
+        .desktop-detail-product #tag {
+          font-size: 0.8rem;
+          padding: 5px;
+        }
+        .desktop-detail-product .product-detail {
+          width: 100%;
+          gap: 0.5rem;
+          padding-inline: 1rem;
+        }
+        .desktop-detail-product .product-name {
+          font-size: 1.5rem;
+        }
+        .desktop-detail-product #discount-price {
+          font-size: 1rem;
+        }
+        .desktop-detail-product .review-count{
+          font-size: 0.9rem;
+          gap: 0.5rem;
+        }
+        .desktop-detail-product #description-product{
+          font-size: 0.8rem;
+        }
+        .desktop-detail-product .order-quantity h1{
+          font-size: 1.2rem;
+        }
+        .desktop-detail-product .order-quantity #quantity{
+          font-size: 01rem;
+        }
+        .desktop-detail-product .order-quantity #min,
+        .desktop-detail-product .order-quantity #plus{
+          width: 1.5rem;
+          height: 1.5rem;
+          line-height: 20px;
+        }
+        .desktop-detail-product .product-size,
+        .desktop-detail-product .product-variant{
+          gap: 0.5rem;
+        }
+        .desktop-detail-product .product-size h4,
+        .desktop-detail-product .product-variant h4{
+          font-size: 0.9rem;
+        }
+        .desktop-detail-product .sizes p{
+          padding: 8px 20px;
+        }
+        .desktop-detail-product .variants p{
+          padding: 8px 55px;
+        }
+        .desktop-detail-product .buttons-order {
+          flex-direction: column;
+          gap: 0.5rem;
+        }
+        .desktop-detail-product #buy{
+          width: 100%;
+        }
+
+
+        .desktop-detail-product .list-products{
+          align-items: center;
+        }
+        .desktop-detail-product .list-products h1 {
+          font-size: 1.5rem;
+        }
+        .desktop-detail-product .wrap > div:nth-child(3) {
+          display: none;
+        }
+        .desktop-detail-product .list-products .product-item .product-details{
+          padding-top: 0.5rem;
+          height: auto;
+          padding-inline: 0.5rem;
+        }
+        .desktop-detail-product .list-products .product-item #tag{
+          left: 2.5rem;
+        }
+        .desktop-detail-product .list-products .product-item .product-details .product-name {
+          font-size: 1rem;
+        }
+        .desktop-detail-product .list-products .product-item .product-details > p {
+          font-size: 0.5rem;
+        }
+        .desktop-detail-product .list-products .product-item .product-details .rating,
+        .desktop-detail-product .list-products .product-item .product-details .rating-stars {
+          gap: 0.2rem;
+        }
+        .desktop-detail-product .list-products .product-item .product-details .price{
+          gap: 0.5rem;
+        }
+        .desktop-detail-product .list-products .product-item .product-details #base-price{
+          font-size: 0.5rem;
+        }
+        .desktop-detail-product .list-products .product-item .product-details #discount-price{
+          font-size: 0.8rem;
+        }
+        .desktop-detail-product .list-products .product-item .product-details .order {
+          flex-direction: column;
+          gap: 0.5rem;
+        }
+        .desktop-detail-product .list-products .product-item .product-details .order img {
+          padding: 3px 55px;
+        }
+        .desktop-detail-product .list-products .product-item .product-details .order button {
+          padding: 3px;
+          width: 100%;
+        }
+      }
+    </style>
 </head>
-<body>
-    <div class="desktop-detail">
-        <div class="div">
-          <div class="overlap">
-            
-            <div class="navbar">
-              <div class="kiri">
-                <img class="logo" src="/assets/FrameLogo.png" />
-                <div class="header-link-block">
-                  <div class="home"><a href="home.html">Home</a></div>
-                  <div class="product"><a href="product.html">Product</a></div>
-                </div>
-              </div>
-              <div class="kanan">
-                <img class="img-2" src="assets/Search.png" />
-                <img class="img-2" src="assets/ShoppingCart.png" />
-                <button class="button-signin"><a class="signin" href="login.html">Sign In</a></button>
-                <button class="button-signup"><a class="signup" href="register.html">Sign Up</a></button>
-              </div>
-            </div>          
-          </div><!-- bawah overlap -->
-          
-          
-            
-          
-  
-          <div class="menu">
-            <div class="listmenu">
-              <div class="d">
-                <div class="menu-group">
-                  <img class="image" src="assets/image 31.png" />
-                  <div class="rectanglemenu"></div>
-                  <div class="isiitemmenu">
-                    <div class="text-wrapper">Hazelnut Latte</div>
-                    <p class="p">
-                      You can explore the menu that we provide with fun and have their own taste and make your day better.
-                    </p>
-                    <div class="text-wrapper-2">IDR 20.000</div>
-                    <div class="framebuy">
-                      <div class="div-wrapper"><div class="text-wrapper-3">Buy</div></div>
-                      <div class="card"><img class="shopping-cart" src="/assets/ShoppingCartkuning.png" /></div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class="c">
-                <div class="menu-group">
-                  <img class="image" src="assets/image 30.png" />
-                  <div class="rectanglemenu"></div>
-                  <div class="isiitemmenu">
-                    <div class="text-wrapper">Hazelnut Latte</div>
-                    <p class="p">
-                      You can explore the menu that we provide with fun and have their own taste and make your day better.
-                    </p>
-                    <div class="text-wrapper-2">IDR 20.000</div>
-                    <div class="framebuy">
-                      <div class="div-wrapper"><div class="text-wrapper-3">Buy</div></div>
-                      <div class="card"><img class="shopping-cart" src="/assets/ShoppingCartkuning.png" /></div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class="b">
-                <div class="menu-group">
-                  <img class="image" src="assets/image 22.png" />
-                  <div class="rectanglemenu"></div>
-                  <div class="isiitemmenu">
-                    <div class="text-wrapper">Hazelnut Latte</div>
-                    <p class="p">
-                      You can explore the menu that we provide with fun and have their own taste and make your day better.
-                    </p>
-                    <div class="text-wrapper-2">IDR 20.000</div>
-                    <div class="framebuy">
-                      <div class="div-wrapper"><div class="text-wrapper-3">Buy</div></div>
-                      <div class="card"><img class="shopping-cart" src="/assets/ShoppingCartkuning.png" /></div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class="a">
-                <div class="menu-group">
-                  <div class="rectanglemenu"></div>
-                  <img class="image" src="assets/image 27.png" />
-                  
-                  <div class="isiitemmenu">
-                    <div class="text-wrapper">Hazelnut Latte</div>
-                    <p class="p">
-                      You can explore the menu that we provide with fun and have their own taste and make your day better.
-                    </p>
-                    <div class="text-wrapper-2">IDR 20.000</div>
-                    <div class="framebuy">
-                      <div class="div-wrapper"><div class="text-wrapper-3">Buy</div></div>
-                      <div class="card"><img class="shopping-cart" src="/assets/ShoppingCartkuning.png" /></div>
-                    </div>
-                  </div>
-                </div>
-              </div>
+<body class="desktop-detail-product">
+  <!-- nav start -->
+  <nav class="dark">
+    <div class="left-nav">
+      <div class="logo">
+        <img src="./assets/cup-coffee-icon-white.png" />
+        <img src="./assets/text-logo-white.png" />
+      </div>
+      <div class="navigation">
+        <a href="home" class="active">Home</a>
+        <a href="product">Product</a>
+      </div>
+    </div>
+
+    <div class="right-nav">
+      <div class="action">
+        <img src="./assets/search-icon.png" />
+        <img src="./assets/shopping-cart-icon.png" />
+        <img src="./assets/nav-option.png" />
+      </div>
+      <div class="authentication">
+        <a href="./login.html" id="sign-in">Sign In</a>
+        <a href="./register.html" id="sign-up">Sign Up</a>
+      </div>
+    </div>
+  </nav>
+  <!-- nav end -->
+
+  <!-- content start -->
+  <div class="container">
+    <!-- product detail start -->
+    <div class="product">
+      <div class="product-img">
+        <img src="./assets/detail-product4.jpg" />
+        <div class="detail-img">
+          <img src="./assets/detail-product1.jpg" />
+          <img src="./assets/detail-product2.jpg" />
+          <img src="./assets/detail-product3.jpg" />
+        </div>
+      </div>
+      <div class="product-detail">
+        <h1 id="tag">FLASH SALE!</h1>
+        <h1 class="product-name">Hazelnut Latte</h1>
+        <div class="price">
+          <h1 id="base-price">IDR 20.000</h1>
+          <h1 id="discount-price">IDR 10.000</h1>
+        </div>
+        <div class="rating">
+          <div class="rating-stars">
+            <img src="./assets/star.png" />
+            <img src="./assets/star.png" />
+            <img src="./assets/star.png" />
+            <img src="./assets/star.png" />
+            <img src="./assets/star.png" />
+          </div>
+          <p id="rating-number">5.0</p>
+        </div>
+        <div class="review-count">
+          <p>200+ Review</p>
+          <p>Recommendation</p>
+          <div>
+            <img src="./assets/thumbs-up.png" />
+          </div>
+        </div>
+        <p id="description-product">
+          Cold brewing is a method of brewing that combines ground coffee and
+          cool water and uses time instead of heat to extract the flavor. It
+          is brewed in small batches and steeped for as long as 48 hours.
+        </p>
+        <div class="order-quantity">
+          <h1 id="min">-</h1>
+          <h1 id="quantity">1</h1>
+          <h1 id="plus">+</h1>
+        </div>
+        <div class="product-size">
+          <h4>Choose Size</h4>
+          <div class="sizes">
+            <p class="selected">Regular</p>
+            <p>Medium</p>
+            <p>Large</p>
+          </div>
+        </div>
+        <div class="product-variant">
+          <h4>Hot/Ice?</h4>
+          <div class="variants">
+            <p class="selected">Cold</p>
+            <p>Hot</p>
+          </div>
+        </div>
+        <div class="buttons-order">
+          <button id="buy">Buy</button>
+          <button class="add-to-cart">
+            <div>
+              <img src="./assets/shopping-cart-icon-orange.png" />
             </div>
-            
-          </div>  <!--  menu -->
-  
-          
-          
-          
-          
-          <!-- footer  -->
-          <div class="footer">
-            <div class="group">
-              <div class="overlap-group">
-                <div class="logo-kata2">
-                  <div class="frame-2">
-                    <img class="logo" src="/assets/FrameLogo.png" />
-                  </div>
-                  <p class="p">
-                    Coffee Shop is a store that sells some good meals, and especially coffee. We provide high quality beans
-                  </p>
-                  <div class="text-wrapper-13">©2020CoffeeStore</div>
-                </div>
-                <div class="footer-product">
-                  <p class="product">Product</p>
-                  <a href="#">Our Product</a>
-                  <a href="#">Pricing</a>
-                  <a href="#">Locations</a>
-                  <a href="#">Countries</a>
-                  <a href="#">Blog</a>
-                  
-                </div> 
-                <div class="footer-engage">
-                  <p class="engage">Engage</p>
-                  <a href="#">Social Media</a>
-                  <a href="#">Partner</a>
-                  <a href="#">FAQ</a>
-                  <a href="#">About Us</a>
-                  <a href="#">Privacy Policy</a>
-                  <a href="#">Terms of Service</a>
-                </div>
-  
-                <div class="sosmed">
-                  <div class="socmed-facebook"></div>
-                  <div class="socmed-twitter"></div>
-                  <div class="socmed-instagram"></div>
-                </div>
-                
+            <p>add to cart</p>
+          </button>
+        </div>
+      </div>
+    </div>
+    <!-- product detail end -->
+
+    <!-- recommendation products start-->
+    <div class="list-products">
+      <h1 id="title-recommend-products">
+        Recommendation <span>For You</span>
+      </h1>
+      <div class="wrap">
+        <div class="product-item">
+          <img src="./assets/./recommend-product1.jpg" />
+          <h1 id="tag">FLASH SALE!</h1>
+          <div class="product-details">
+            <h1 class="product-name">Hazelnut Latte</h1>
+            <p>
+              You can explore the menu that we provide with fun and have their
+              own taste and make your day better.
+            </p>
+            <div class="rating">
+              <div class="rating-stars">
+                <img src="./assets/star.png" />
+                <img src="./assets/star.png" />
+                <img src="./assets/star.png" />
+                <img src="./assets/star.png" />
+                <img src="./assets/star.png" />
+              </div>
+              <p id="rating-number">5.0</p>
+            </div>
+            <div class="price">
+              <h1 id="base-price">IDR 20.000</h1>
+              <h1 id="discount-price">IDR 10.000</h1>
+            </div>
+            <div class="order">
+              <button>Buy</button>
+              <div>
+                <img src="./assets/shopping-cart-icon-orange.png" />
               </div>
             </div>
           </div>
-          <!-- end-footer  -->
-  
+        </div>
+
+        <div class="product-item">
+          <img src="./assets/./recommend-product2.jpg" />
+          <h1 id="tag">FLASH SALE!</h1>
+          <div class="product-details">
+            <h1 class="product-name">Hazelnut Latte</h1>
+            <p>
+              You can explore the menu that we provide with fun and have their
+              own taste and make your day better.
+            </p>
+            <div class="rating">
+              <div class="rating-stars">
+                <img src="./assets/star.png" />
+                <img src="./assets/star.png" />
+                <img src="./assets/star.png" />
+                <img src="./assets/star.png" />
+                <img src="./assets/star.png" />
+              </div>
+              <p id="rating-number">5.0</p>
+            </div>
+            <div class="price">
+              <h1 id="base-price">IDR 20.000</h1>
+              <h1 id="discount-price">IDR 10.000</h1>
+            </div>
+            <div class="order">
+              <button>Buy</button>
+              <div>
+                <img src="./assets/shopping-cart-icon-orange.png" alt="" />
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="product-item">
+          <img src="./assets/recommend-product2.jpg" />
+          <h1 id="tag">FLASH SALE!</h1>
+          <div class="product-details">
+            <h1 class="product-name">Hazelnut Latte</h1>
+            <p>
+              You can explore the menu that we provide with fun and have their
+              own taste and make your day better.
+            </p>
+            <div class="rating">
+              <div class="rating-stars">
+                <img src="./assets/star.png" />
+                <img src="./assets/star.png" />
+                <img src="./assets/star.png" />
+                <img src="./assets/star.png" />
+                <img src="./assets/star.png" />
+              </div>
+              <p id="rating-number">5.0</p>
+            </div>
+            <div class="price">
+              <h1 id="base-price">IDR 20.000</h1>
+              <h1 id="discount-price">IDR 10.000</h1>
+            </div>
+            <div class="order">
+              <button>Buy</button>
+              <div>
+                <img src="./assets/shopping-cart-icon-orange.png" alt="" />
+              </div>
+            </div>
+          </div>
         </div>
       </div>
+      <div class="page-chooser">
+        <h3 class="chosen">1</h3>
+        <h3>2</h3>
+        <h3>2</h3>
+        <h3>4</h3>
+        <div>
+          <img src="./assets/arrow-right.png" />
+        </div>
+      </div>
+    </div>
+    <!-- recommendation products end-->
+  </div>
+  <!-- content end -->
+
+  <!-- footer start -->
+  <footer>
+    <div class="description">
+      <div class="logo">
+        <img src="./assets/cup-coffe-icon.png" />
+        <img src="./assets/text-logo.png" />
+      </div>
+      <p>
+        Coffee Shop is a store that sells some good meals, and especially
+        coffee. We provide high quality beans
+      </p>
+      <p id="copyright">&copy;2020CoffeeStore</p>
+    </div>
+
+    <div class="product-link">
+      <p>Product</p>
+      <a href="#">Our Product</a>
+      <a href="#">Pricing</a>
+      <a href="#">Location</a>
+      <a href="#">Countries</a>
+      <a href="#">Blog</a>
+    </div>
+
+    <div class="engage">
+      <p>Engage</p>
+      <a href="#">Partner</a>
+      <a href="#">FAQ</a>
+      <a href="#">About Us</a>
+      <a href="#">Privacy Policy</a>
+      <a href="#">Terms of Service</a>
+    </div>
+
+    <div class="social-media">
+      <p>Social Media</p>
+      <div class="link-social-media">
+        <a href="#"><img src="./assets/facebook-logo-circle.png" /></a>
+        <a href="#"><img src="./assets/twitter-logo-circle.png" /></a>
+        <a href="#"><img src="./assets/instagram-logo-circle.png" /></a>
+      </div>
+    </div>
+  </footer>
+  <!-- footer end -->
 </body>
 </html>

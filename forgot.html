@@ -1,42 +1,71 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Forgot Password</title>
     <link rel="stylesheet" href="./css/style.css">
+    <style>
+      @media screen and (max-width: 426px) {
+        .leftPage {
+          display: none;
+        }
+
+        .rightPage.forgotPass{
+          display: flex;
+          justify-content: center;
+          align-items: center;
+        }
+
+        .forgotPassGlobal .form h1{
+          font-size: 1rem;
+        }
+
+        .forgotPassGlobal .form p{
+          font-size: 0.9rem;
+        }
+
+        .forgotPassGlobal .form label{
+            font-size: 0.9rem;
+        }
+
+        .forgotPassGlobal .form .input-group .input{
+            padding: 0.6rem;
+        }
+
+        .forgotPassGlobal #register-login-submit{
+            padding: 8px;
+        }
+      }
+    </style>
     </head>
-<body>
-<div class="container">
-    <div class="kiri">
-        <div class="backgroundForgot"></div>
-    </div>
-    <div class="kanan">
-      <div class="logo">
-        <img class="img" src="assets/Frame.png" />
-        <div class="logo1"><div class="text-form">Coffee Shop</div></div>
-      </div>
-  <div class="form">
-    <form method="post">
-      <div class="text-form-2">Fill out the form correctly</div>
-          <p class="p">We will send new password to your email</p>
-      
-      <div class="textEP">
-        <label for="email">Email</label>
-        <div class="kotak">
-          <img class="img-2" src="assets/mail.png" />
-          <input type="email" name="email" id="email" placeholder="Enter Your Email">
+    <body class="auth forgotPassGlobal">
+      <div class="leftPage forgotPass"></div>
+      <div class="rightPage forgotPass">
+        <div class="content forgotPass">
+          <div class="logo">
+            <div class="logo-items">
+              <img src="./assets/cup-coffe-icon.png" />
+              <img src="./assets/text-logo.png" alt="" />
+            </div>
+          </div>
+          <div class="form">
+            <h1>Fill out the form correctly</h1>
+            <p>We will send new password to your email</p>
+  
+            <form>
+              <div class="input-group">
+                <label for="email">Email</label>
+                <div class="input">
+                  <img src="./assets/mail.png" />
+                  <input id="email" type="email" placeholder="Enter Your Email" />
+                </div>
+              </div>
+    
+              <button type="submit" id="register-login-submit">Submit</button>
+            </form>
+          </div>
         </div>
       </div>
-
-      <div class="not-have-an-account">
-            <!-- untuk gab antar kolom -->
-          </div>
-      <button type="submit" class="button">
-        <div class="text-button">Submit</div>
-      </button>
-      
-    </form>
-  </div><!--form-->
-</div> <!--kanan-->
-    
-</div><!--  container -->
-</body>
+    </body>
 </html>
