@@ -2,6 +2,14 @@
 
 A project coffe shop, build with using HTML 5 Semantic, CSS Vanilla and Responsive website for mobile, tablet and laptop.
 
+## Built using
+
+![HTML5](https://img.shields.io/badge/HTML5-%2320232a.svg?style=for-the-badge&logo=HTML5&logoColor=%2362320232a1DAF)
+![CSS](https://img.shields.io/badge/CSS3-%2320232a.svg?style=for-the-badge&logo=CSS3&logoColor=%2361DAFB)
+![Javascript](https://img.shields.io/badge/javascript-%2320232a.svg?style=for-the-badge&logo=javascript&logoColor=#e4a22a)
+![Google Chrome](https://img.shields.io/badge/Google%20Chrome-4285F4?style=for-the-badge&logo=GoogleChrome&logoColor=white)
+![Visual Studio Code](https://img.shields.io/badge/Visual%20Studio%20Code-0078d7.svg?style=for-the-badge&logo=visual-studio-code&logoColor=white)
+
 ---
 
 ## Link Demo Website
